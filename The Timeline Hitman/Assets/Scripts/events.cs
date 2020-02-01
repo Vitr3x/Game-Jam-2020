@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class events : MonoBehaviour
 {
     bool killedGuy = false;
+    private Animator blackScreen;
+    GameObject blkScr;
 
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        blkScr = GameObject.FindGameObjectWithTag("Panel");
+        blackScreen = blkScr.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,12 +25,21 @@ public class events : MonoBehaviour
 
     public void killedMan(string namez)
     {
-        StartCoroutine(TimeIt(2, namez));
+        StartCoroutine(TimeIt(1, namez));
     }
 
     void killedManpart2()
     {
         Debug.Log("we made it");
+        blackScreen.SetBool("toBlack", true);
+        blkScr.transform.GetChild(0).transform.gameObject.SetActive(true);
+        StartCoroutine(EndLvl(3));
+
+    }
+
+    void resetLevel()
+    {
+        SceneManager.LoadScene("Game Scene");
     }
 
     IEnumerator TimeIt(int seconds, string namez)
@@ -36,5 +49,11 @@ public class events : MonoBehaviour
         {
             killedManpart2();
         }
+    }
+
+    IEnumerator EndLvl(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        resetLevel();
     }
 }
