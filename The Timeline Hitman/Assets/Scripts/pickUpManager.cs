@@ -21,7 +21,6 @@ public class pickUpManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             var selection = hit.transform;
-            Debug.Log(selection.tag);
             if (selection.tag == "Pickup")
             {
                 dist = Vector3.Distance(cam.transform.position, selection.transform.position);

@@ -34,7 +34,14 @@ public class events : MonoBehaviour
         blackScreen.SetBool("toBlack", true);
         blkScr.transform.GetChild(0).transform.gameObject.SetActive(true);
         StartCoroutine(EndLvl(3));
+    }
 
+    void seenBySomeone()
+    {
+        Debug.Log("seen");
+        blackScreen.SetBool("toBlack", true);
+        blkScr.transform.GetChild(1).transform.gameObject.SetActive(true);
+        StartCoroutine(EndLvl(3));
     }
 
     void resetLevel()
@@ -48,6 +55,9 @@ public class events : MonoBehaviour
         if (namez == "Guy")
         {
             killedManpart2();
+        } else if (namez == "Spotted")
+        {
+            seenBySomeone();
         }
     }
 
