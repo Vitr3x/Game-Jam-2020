@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 40
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -403,21 +403,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/Scenes/New Scene
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/Scenes/New Scene
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\hsaunders2\Documents\GitHub\Game-Jam-2020\The Timeline
+  m_LastProjectPath: C:\Users\bdaniel\Documents\GitHub\Game-Jam-2020\The Timeline
     Hitman
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48350000
-    m_LastClickedID: 13640
-    m_ExpandedIDs: 0000000036350000383500003a3500003c3500004835000000ca9a3b
+    m_SelectedIDs: 56350000
+    m_LastClickedID: 13654
+    m_ExpandedIDs: 000000003e350000403500004235000044350000463500005435000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000036350000383500003a3500003c350000
+    m_ExpandedIDs: 000000003e35000040350000423500004435000046350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f6390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -568,9 +568,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 72fbffff
+      m_SelectedIDs: 90f9ffff
+      m_LastClickedID: -1648
+      m_ExpandedIDs: 56faffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -630,9 +630,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.65, y: 0.74, z: 3.18}
+    m_Target: {x: -17.61859, y: 3.6388385, z: 1.8881906}
     speed: 2
-    m_Value: {x: -2.65, y: 0.74, z: 3.18}
+    m_Value: {x: -17.61859, y: 3.6388385, z: 1.8881906}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -678,13 +678,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.007665903, y: -0.9575388, z: 0.28710762, w: -0.02558386}
+    m_Target: {x: -0.02352897, y: -0.7249099, z: -0.024798706, w: 0.6880123}
     speed: 2
-    m_Value: {x: 0.007665903, y: 0.95753884, z: -0.28710765, w: 0.02558386}
+    m_Value: {x: -0.022461092, y: -0.7259689, z: -0.023744725, w: 0.68695045}
   m_Size:
     m_Target: 18.372665
     speed: 2
-    m_Value: 17.581497
+    m_Value: 18.372665
   m_Ortho:
     m_Target: 0
     speed: 2
