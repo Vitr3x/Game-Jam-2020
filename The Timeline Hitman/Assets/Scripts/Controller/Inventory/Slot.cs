@@ -12,8 +12,15 @@ public class Slot : MonoBehaviour
     public void setIcon(Sprite newIcon)
     {
         icon.sprite = newIcon;
-
+        icon.enabled = true;
     }
+
+    public void clearIcon()
+    {
+        icon.sprite = null;
+        icon.enabled = false;
+    }
+
 
     public bool isEmpty()
     {

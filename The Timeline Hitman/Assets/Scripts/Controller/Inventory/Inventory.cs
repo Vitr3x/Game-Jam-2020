@@ -22,6 +22,22 @@ public class Inventory : MonoBehaviour
             {
                 // A slot is found do stuff
                 Items[i] = newItem;
+                // update the slot icon
+                Slots[i].GetComponent<Slot>().setIcon(newItem.GetComponent<ItemProperties>().getIcon());
+                continue;
+            }
+        }        
+    }
+
+    // Remove Item
+
+    public void removeItem(GameObject item)
+    {
+        for(int i = 0; i < numSlots; i++)
+        {
+            // if the items match
+            if(Items[i] == item)
+            {
 
             }
         }
@@ -29,10 +45,6 @@ public class Inventory : MonoBehaviour
 
     // Swap an item
 
-    // Update the slots
-    public void DisplayItems(){
-        
-    }
 
 
 }
