@@ -12,8 +12,22 @@ public class InventoryHandler : MonoBehaviour
 
     public void EquipItem(GameObject crtItem)
     {
+        // remove the old item
+        if (hand.transform.childCount > 0)
+        {
+            Transform child = hand.transform.GetChild(0);
+            child.gameObject.SetActive(false);
+            child.parent = null;
+        }
+
+
+        // add the new item       
         crtItem.GetComponent<Rigidbody>().detectCollisions = false;
         crtItem.GetComponent<Rigidbody>().useGravity = false;
+        crtItem.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        crtItem.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
+
+
         crtItem.transform.position = hand.transform.position;
         crtItem.transform.SetParent(hand.transform);
         crtItem.SetActive(true);
@@ -25,7 +39,7 @@ public class InventoryHandler : MonoBehaviour
         {
             HeldItemIndex = 0;
             GameObject currentItem = this.GetComponent<Inventory>().Items[HeldItemIndex];
-            if(currentItem != null)
+            if (currentItem != null)
             {
                 EquipItem(currentItem);
             }
@@ -50,7 +64,7 @@ public class InventoryHandler : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            if(HeldItemIndex > -1)
+            if (HeldItemIndex > -1)
             {
                 // drop the selected item
                 DropItem(this.GetComponent<Inventory>().Items[HeldItemIndex]);
