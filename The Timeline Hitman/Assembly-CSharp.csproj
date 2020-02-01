@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\View\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\gunShooter.cs" />
     <Compile Include="Assets\Scripts\item.cs" />
+    <Compile Include="Assets\Scripts\kill.cs" />
     <Compile Include="Assets\Scripts\pickUpManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
