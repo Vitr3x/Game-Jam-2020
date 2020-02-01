@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ItemProperties : MonoBehaviour
 {
 
     // --- Possible Additions
@@ -11,7 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Item Description
 
     // Item Picture
-    private Sprite ItemIcon;
+    public Sprite ItemIcon;
 
     public Sprite getItemIcon()
     {

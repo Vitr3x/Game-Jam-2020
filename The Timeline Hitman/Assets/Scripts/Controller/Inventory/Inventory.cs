@@ -15,16 +15,19 @@ public class Inventory : MonoBehaviour
     // Add an item to inventory
     public void AddItem(GameObject newItem)
     {
+        Debug.Log(newItem);
         // Find an empty slot
         for(int i = 0; i < numSlots; i++)
         {
             if (Slots[i].GetComponent<Slot>().isEmpty())
             {
+                Debug.Log(newItem);
                 // A slot is found do stuff
                 Items[i] = newItem;
+                Debug.Log(Items[i]);
                 // update the slot icon
-                Slots[i].GetComponent<Slot>().setIcon(newItem.GetComponent<ItemProperties>().getIcon());
-                continue;
+                Slots[i].GetComponent<Slot>().setIcon(newItem.GetComponent<ItemProperties>().getItemIcon());
+                break;
             }
         }        
     }
