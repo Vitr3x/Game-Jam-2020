@@ -27,6 +27,7 @@ public class Inventory : MonoBehaviour
                 Debug.Log(Items[i]);
                 // update the slot icon
                 Slots[i].GetComponent<Slot>().setIcon(newItem.GetComponent<ItemProperties>().getItemIcon());
+                Slots[i].GetComponent<Slot>().setEmpty(false);
                 break;
             }
         }        
@@ -41,12 +42,11 @@ public class Inventory : MonoBehaviour
             // if the items match
             if(Items[i] == item)
             {
-
+                Items[i] = null;
             }
         }
     }
 
-    // Swap an item
 
 
 

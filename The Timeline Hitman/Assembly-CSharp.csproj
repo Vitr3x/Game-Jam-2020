@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletScript.cs" />
     <Compile Include="Assets\Scripts\Controller\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Controller\Inventory\InventoryHandler.cs" />
     <Compile Include="Assets\Scripts\Controller\Inventory\Slot.cs" />
     <Compile Include="Assets\Scripts\Model\ItemProperties.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
@@ -129,25 +130,25 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -327,10 +328,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-Editor">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-Runtime">
-      <HintPath>C:/Users/hsaunders2/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+      <HintPath>C:/Users/rbett/Documents/GitHub/Game-Jam-2020/The Timeline Hitman/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
