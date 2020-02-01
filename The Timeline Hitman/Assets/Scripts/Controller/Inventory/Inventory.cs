@@ -38,7 +38,8 @@ public class Inventory : MonoBehaviour
             // if the items match
             if(Items[i] == item)
             {
-
+                Items[i] = null;
+                Slots[i].GetComponent<Slot>().clearIcon();
             }
         }
     }
