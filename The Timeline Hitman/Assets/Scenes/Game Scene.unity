@@ -381,7 +381,7 @@ PrefabInstance:
     - target: {fileID: 8224028898700412418, guid: bded189749f61444c8eef97225f9f4fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8224028898700412418, guid: bded189749f61444c8eef97225f9f4fe,
         type: 3}
@@ -547,7 +547,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 3497d3eda935d634784de2a0028b3662,
         type: 3}
       propertyPath: m_Name
-      value: MiiModel
+      value: Guy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3497d3eda935d634784de2a0028b3662, type: 3}
@@ -570,6 +570,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.83, y: 3.84, z: 1.5}
   m_Center: {x: 1, y: 2, z: 0}
+--- !u!114 &519223919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519223916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2b7bb7be336f84b866dfaf5875f7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &567433602
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117037320}
   - component: {fileID: 1117037319}
+  - component: {fileID: 1117037321}
   m_Layer: 0
   m_Name: _gm
   m_TagString: Inventory
@@ -959,6 +972,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117037321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117037318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed4353007d7ad742856c3b4499d2cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237755401
 GameObject:
   m_ObjectHideFlags: 0

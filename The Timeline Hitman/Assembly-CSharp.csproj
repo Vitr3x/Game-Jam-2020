@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\View\MainMenu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\events.cs" />
     <Compile Include="Assets\Scripts\gunShooter.cs" />
     <Compile Include="Assets\Scripts\item.cs" />
     <Compile Include="Assets\Scripts\kill.cs" />
