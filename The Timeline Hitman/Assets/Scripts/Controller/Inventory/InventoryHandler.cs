@@ -12,6 +12,16 @@ public class InventoryHandler : MonoBehaviour
 
     public void EquipItem(GameObject crtItem)
     {
+        // remove the old item
+        if(hand.transform.childCount > 0)
+        {
+            Transform child = hand.transform.GetChild(0);
+            child.gameObject.SetActive(false);
+            child.parent = null;
+        }
+
+
+        // add the new item
         crtItem.GetComponent<Rigidbody>().detectCollisions = false;
         crtItem.GetComponent<Rigidbody>().useGravity = false;
         crtItem.transform.position = hand.transform.position;

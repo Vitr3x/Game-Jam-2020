@@ -13,7 +13,9 @@ public class Inventory : MonoBehaviour
     public GameObject[] Items = new GameObject[numSlots];
 
     // Add an item to inventory
-    public void AddItem(GameObject newItem)
+    // returns true if item is stored
+    // returns false if the item is not stored correctly
+    public bool AddItem(GameObject newItem)
     {
         Debug.Log(newItem);
         // Find an empty slot
@@ -28,9 +30,10 @@ public class Inventory : MonoBehaviour
                 // update the slot icon
                 Slots[i].GetComponent<Slot>().setIcon(newItem.GetComponent<ItemProperties>().getItemIcon());
                 Slots[i].GetComponent<Slot>().setEmpty(false);
-                break;
+                return true;
             }
-        }        
+        }
+        return false;
     }
 
     // Remove Item
@@ -46,8 +49,6 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
-
 
 
 }

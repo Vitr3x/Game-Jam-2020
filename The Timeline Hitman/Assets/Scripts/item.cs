@@ -23,8 +23,11 @@ public class item : MonoBehaviour
 
     public void PickUp()
     {
-        Debug.Log("Picked up");
-        inv.GetComponent<Inventory>().AddItem(thisGameobject);
-        thisGameobject.SetActive(false);
+        if (inv.GetComponent<Inventory>().AddItem(thisGameobject))
+        {
+            Debug.Log("Picked up");
+
+            thisGameobject.SetActive(false);
+        }        
     } 
 }
