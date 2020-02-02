@@ -26,9 +26,6 @@ public class Pathing : MonoBehaviour
 
     public void walk()
     {
-        Debug.Log("Started Pathing");
-
-        Debug.Log("Pathing to point");
         Quaternion rotation = Quaternion.LookRotation(path[crtPoint].transform.position - this.transform.position);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
@@ -37,7 +34,6 @@ public class Pathing : MonoBehaviour
 
         float speedElement = Vector2.Dot(wayPointDirection.normalized, transform.forward);
         float speed = acceleration * speedElement;
-        Debug.Log(speed);
 
         this.transform.Translate(0, 0, Time.deltaTime * speed);
 
