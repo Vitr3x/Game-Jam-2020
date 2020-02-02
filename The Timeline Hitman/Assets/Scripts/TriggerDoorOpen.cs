@@ -24,13 +24,13 @@ public class TriggerDoorOpen : MonoBehaviour
     {
         if (TriggerOn)
         {
-            Door1.transform.rotation = Quaternion.Slerp(Door1.transform.rotation, Quaternion.Euler(0, OpenDoorAngle1, 0), 4 * Time.deltaTime);
-            Door2.transform.rotation = Quaternion.Slerp(Door2.transform.rotation, Quaternion.Euler(0, OpenDoorAngle2, 0), 4 * Time.deltaTime);
+            Door1.transform.rotation = Quaternion.Slerp(Door1.transform.rotation, Quaternion.Euler(0, OpenDoorAngle1, 0), 3 * Time.deltaTime);
+            Door2.transform.rotation = Quaternion.Slerp(Door2.transform.rotation, Quaternion.Euler(0, OpenDoorAngle2, 0), 3 * Time.deltaTime);
         }
         if (!TriggerOn)
         {
-            Door1.transform.rotation = Quaternion.Slerp(Door1.transform.rotation, Quaternion.Euler(0, CloseDoorAngle1, 0), 4 * Time.deltaTime);
-            Door2.transform.rotation = Quaternion.Slerp(Door2.transform.rotation, Quaternion.Euler(0, CloseDoorAngle2, 0), 4 * Time.deltaTime);
+            Door1.transform.rotation = Quaternion.Slerp(Door1.transform.rotation, Quaternion.Euler(0, CloseDoorAngle1, 0), 3 * Time.deltaTime);
+            Door2.transform.rotation = Quaternion.Slerp(Door2.transform.rotation, Quaternion.Euler(0, CloseDoorAngle2, 0), 3 * Time.deltaTime);
         }
     }
 
