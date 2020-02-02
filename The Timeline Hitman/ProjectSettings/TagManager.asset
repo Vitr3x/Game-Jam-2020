@@ -8,6 +8,9 @@ TagManager:
   - Pickup
   - Inventory
   - Panel
+  - Hand
+  - Aim
+  - Point
   layers:
   - Default
   - TransparentFX
