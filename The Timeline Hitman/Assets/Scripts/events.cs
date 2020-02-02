@@ -38,7 +38,7 @@ public class events : MonoBehaviour
         StartCoroutine(EndLvl(3));
     }
 
-    void CaughtWithGun()
+    public void CaughtWithGun()
     {
         blackScreen.SetBool("toBlack", true);
         lable.GetComponent<Text>().text = "BUSTED\n\nGood job rookie.Bailing you out was not on our to do list.Thanks to your inadequacy Hitler now knows of time travel.Shooting faster dumb ass. ****HE IS AFTER US * ***.\n\nRESET NOW FAST-- - Damn Rookies";

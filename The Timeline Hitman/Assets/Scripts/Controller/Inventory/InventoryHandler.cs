@@ -13,8 +13,10 @@ public class InventoryHandler : MonoBehaviour
 
 
     public GameObject hand;
-
+    public GameObject hitler;
     private int HeldItemIndex = -1;
+    private Transform child;
+    private float maxTime = 5f;
 
 
 
@@ -39,10 +41,6 @@ public class InventoryHandler : MonoBehaviour
             child.parent = null;
 
         }
-
-
-
-
 
         // add the new item
 
@@ -142,6 +140,25 @@ public class InventoryHandler : MonoBehaviour
 
                 this.GetComponent<Inventory>().Slots[HeldItemIndex].GetComponent<Slot>().setEmpty(true);
 
+            }
+
+            
+            // check if hitler and gun is active
+            if (child.gameObject.name == "gun" && hitler.activeSelf == true)
+            {                
+
+                maxTime -= Time.deltaTime;
+
+                if (maxTime <= 0.0f)
+                {
+                    // trigger death
+                    GameObject GM = GameObject.Find("_GM");
+                    GM.GetComponent<events>().CaughtWithGun();
+                }
+
+            } else
+            {
+                maxTime = 5f;
             }
 
         }
