@@ -33,26 +33,27 @@ public class events : MonoBehaviour
     {
        
         blackScreen.SetBool("toBlack", true);
-        lable.GetComponent<Text>().text = "THAT WASN'T HITLER!!!\n\n By killing one of Hitlers \"loyal\" followers you have incited his rage!In the wake of your meddling the world has turned into a nuclear wasteland.\n\nFIX THIS NOW.We are sending you back to start over!";
+        lable.GetComponent<Text>().text = "THAT WASN'T HITLER!!!\n\nBy killing one of Hitlers \"loyal\" followers you have incited his rage!In the wake of your meddling the world has turned into a nuclear wasteland.\n\nFIX THIS NOW.We are sending you back to start over!";
         lable.SetActive(true);
-        StartCoroutine(EndLvl(3));
+        StartCoroutine(EndLvl(8));
     }
 
     public void CaughtWithGun()
     {
+        Debug.Log("caught with a gun");
         blackScreen.SetBool("toBlack", true);
-        lable.GetComponent<Text>().text = "BUSTED\n\nGood job rookie.Bailing you out was not on our to do list.Thanks to your inadequacy Hitler now knows of time travel.Shooting faster dumb ass. ****HE IS AFTER US * ***.\n\nRESET NOW FAST-- - Damn Rookies";
         lable.SetActive(true);
-        StartCoroutine(EndLvl(3));
+        lable.GetComponent<Text>().text = "BUSTED\n\nGood job rookie.Bailing you out was not on our to do list.Thanks to your inadequacy Hitler now knows of time travel.Shooting faster dumb ass. ****HE IS AFTER US * ***.\n\nRESET NOW FAST-- - Damn Rookies";
+        StartCoroutine(EndLvl(8));
     }
 
     void seenBySomeone()
     {
         Debug.Log("seen");
         blackScreen.SetBool("toBlack", true);
-        lable.GetComponent<Text>().text = "BUSTED \n Good job rookie.Bailing you out was not on our to do list.Thanks to your inadequacy Hitler now knows of time travel.Try knocking that major out. ****HE IS AFTER US * ***. \n\nRESET NOW FAST-- - Damn Rookies";
+        lable.GetComponent<Text>().text = "BUSTED \n\nGood job rookie.Bailing you out was not on our to do list.Thanks to your inadequacy Hitler now knows of time travel.Try knocking that major out. ****HE IS AFTER US * ***. \n\nRESET NOW FAST-- - Damn Rookies";
         lable.SetActive(true);             
-        StartCoroutine(EndLvl(3));
+        StartCoroutine(EndLvl(8));
     }
 
     void resetLevel()

@@ -34,7 +34,7 @@ public class InventoryHandler : MonoBehaviour
 
         {
 
-            Transform child = hand.transform.GetChild(0);
+            child = hand.transform.GetChild(0);
 
             child.gameObject.SetActive(false);
 
@@ -142,27 +142,29 @@ public class InventoryHandler : MonoBehaviour
 
             }
 
-            
-            // check if hitler and gun is active
-            if (child.gameObject.name == "gun" && hitler.activeSelf == true)
-            {                
+        }
 
+        // check if hitler and gun is active
+         if (hand.transform.childCount > 0) {
+            child = hand.transform.GetChild(0);
+            if (child.gameObject.name == "gun" && hitler.activeSelf == true)
+            {
                 maxTime -= Time.deltaTime;
 
                 if (maxTime <= 0.0f)
                 {
                     // trigger death
-                    GameObject GM = GameObject.Find("_GM");
+                    GameObject GM = GameObject.Find("_gm");
                     GM.GetComponent<events>().CaughtWithGun();
+                    maxTime = 100f;
                 }
 
-            } else
+            }
+            else
             {
                 maxTime = 5f;
             }
-
         }
-
 
 
 
