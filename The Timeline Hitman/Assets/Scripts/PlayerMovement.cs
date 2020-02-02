@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform grounded;
     public float groundDist = 0.4f;
     public LayerMask groundMask;
+    private float savedHeight;
 
     Vector3 banana;
     bool isGrounded;
@@ -21,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        
+        savedHeight = this.GetComponent<CharacterController>().height;
     }
 
     void Update()
@@ -55,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
 
-            this.GetComponent<CharacterController>().height =
+            this.GetComponent<CharacterController>().height = savedHeight;
 
 
             Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale + new Vector3 (0,transform.localScale.y,0), Quaternion.identity, 1 >> 8);
