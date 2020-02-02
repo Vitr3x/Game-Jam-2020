@@ -11,8 +11,8 @@ public class events : MonoBehaviour
 
     
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() { 
+
         blkScr = GameObject.FindGameObjectWithTag("Panel");
         blackScreen = blkScr.GetComponent<Animator>();
     }
