@@ -14,10 +14,12 @@ public class routePathing : MonoBehaviour
     public bool noLoop = false;
     private Quaternion _lookRotation;
     private Vector3 _direction;
+    GameObject eventers;
+    
 
     void Start()
     {
-        
+        eventers = GameObject.FindGameObjectWithTag("Inventory");
     }
 
     // Update is called once per frame
@@ -32,6 +34,11 @@ public class routePathing : MonoBehaviour
                 current = 0;
             } else if (current >= p && noLoop == true)
             {
+                if (this.gameObject.name == "Hitler")
+                {
+                    string namez = "HitlerEsc";
+                    eventers.GetComponent<events>().HitlerEscape();
+                }
                 Destroy(this);
             }
         }

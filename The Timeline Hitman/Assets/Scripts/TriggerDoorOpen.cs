@@ -34,16 +34,16 @@ public class TriggerDoorOpen : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Enemy" || other.tag == "Hitler")
         {
             TriggerOn = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Enemy" || other.tag == "Hitler")
         {
             TriggerOn = false;
         }

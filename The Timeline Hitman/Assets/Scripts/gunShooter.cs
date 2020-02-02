@@ -61,6 +61,7 @@ public class gunShooter : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                GetComponent<AudioSource>().Play();
                 GameObject tempBullet;
                 tempBullet = Instantiate(Bullet, BulletSpawn.transform.position, BulletSpawn.transform.rotation) as GameObject;
                 tempBullet.transform.Rotate(Vector3.left * 90);

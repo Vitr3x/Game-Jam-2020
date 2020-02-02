@@ -11,6 +11,8 @@ TagManager:
   - Hand
   - Aim
   - Point
+  - Enemy
+  - Hitler
   layers:
   - Default
   - TransparentFX
